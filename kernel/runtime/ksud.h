@@ -3,6 +3,10 @@
 
 #include <asm/syscall.h>
 
++#ifdef CONFIG_COMPAT
++#include <linux/compat.h>
++#endif
+
 #define KSUD_PATH "/data/adb/ksud"
 
 void ksu_ksud_init();
